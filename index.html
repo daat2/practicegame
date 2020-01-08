@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/css/style.css" type="text/css" />
-    <title> Simon game </title>
+    <title> Playing Simon game </title>
 </head>
 <body>
 <div class="container">
   <div class="header">
-    <h1></h1>
+    <h1>Play Simon Game </h1>
   </div>
-  <div class="simonBoard ">
-      <div id="0" class="pad green"></div>
-      <div id="1" class="pad red"></div>
-      <div id="2" class="pad yellow"></div>
-      <div id="3" class="pad blue"></div>   
-    <div class="board-controls">
+  <div class="gamePad ">
+      <div id="blue" class="gameButton"></div>
+      <div id="yellow" class="gameButton"></div>
+      <div id="green" class="gameButton"></div>
+      <div id="orange" class="gameButton"></div>   
+    <div class="game-controller">
       <div class="title">SIMON</div>
       <div class="display inline">00</div>
       <div class="start inline">START</div>
@@ -39,4 +39,15 @@
 </body>
 </html>
 
-
+<!-- function checkButtons(gamepad) {
+   for (var i = 0; i < gamepad.buttons.length; i++) {
+      // do nothing is the gamepad is not ok
+      if(gamepad === undefined) return;
+      if(!gamepad.connected) return;
+      var b = gamepad.buttons[i];
+      if(b.pressed) {
+         console.log("Button " + i + " is pressed.");
+         if(b.value !== undefined)
+             // analog trigger L2 or R2, value is a float in [0, 1]
+             console.log("Its value:" + b.val);
+      } -->
