@@ -1,7 +1,13 @@
-body {
-  background: url("http://cdn.backgroundhost.com/backgrounds/subtlepatterns/purty_wood.png");
+ /* @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300"); */
+
+
+ 
+ body {
+  background: url("https://www.toptal.com/designers/subtlepatterns/patterns/vintage-concrete.png" alt="game");
   font-family: 'Righteous', cursive;
   color: black;
+
+  
 }
 
 .container {
