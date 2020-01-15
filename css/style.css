@@ -1,6 +1,5 @@
  /* @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300"); */
 
-
  
  body{  
     background:url("../assets/images/vintage-concrete.png");
@@ -10,38 +9,44 @@ background-size :cover;
   
 
 .container {
-  margin: 0 auto;
+ 
+ margin: 0 auto;
   text-align: center;
-}
+  
+        }
+
 
 h1 {
-  font-size: 100px;
+  font-size: 80px;
 }
 
+      
 .gamePad{
   margin: 0 auto;
-  margin-top: 50px;
-  border: solid 12px black;
-  width: 600px;
-   height: 600px;
-  border-radius:600px;
-  box-shadow: 10px 10px 10px 10px ;
+  margin-top :170px;
+  border: solid 10px black;
+  width: 640px;
+  height: 640px;
+  border-radius: 310px;
+  background-clip: content-box;
+  
 }
 
-.button{
-  margin: 0;
-  float: left;
-  position: relative;
-  width: 290px;
-  height: 290px;
-  z-index: 5;
-  border: 5px solid black;
+     
+  .button{
+  margin: 0 auto;
+ float: left;
+  position : static;
+  width: 300px;
+  height: 300px;
+  z-index: auto;
+  border:6px solid black;
 }
 
 .blue {
     background-color:rgb(26, 0, 170);
-    -moz-border-radius: 300px 0 0 0;
-    border-radius: 300px 0 0 0;    
+    -moz-border-radius: 320px 0 0 0;
+    border-radius: 320px 0 0 0;    
 }
 
 .blue-active {
@@ -50,8 +55,8 @@ h1 {
 
 .yellow {
   background-color: yellow;
-  -moz-border-radius: 0 300px 0 0;
-  border-radius: 0 300px 0 0;
+  -moz-border-radius: 0 320px 0 0;
+  border-radius: 0 320px 0 0;
 }
 
 
@@ -61,46 +66,45 @@ h1 {
 
 .green {
   background-color: green;
-  -moz-border-radius: 0 0 300px 0;
-  border-radius: 0 0 300px 0;
+  -moz-border-radius: 0 0 320px 0;
+  border-radius: 0 0 320px 0;
+  
 }
 
-.green-active {
-  background-color: green !important;
-}
+.green.active {
+  background-color: green!important;
 
+}
 .orange {
   background-color: orange;
-  -moz-border-radius: 0 0 300px 0;
-  border-radius: 0 0 300px 0;
+  -moz-border-radius: 0 0 320px 0;
+  border-radius: 0 0 320px 0;
 }
 
 .orange-active {
-  background-color: orange!important;
-
+  background-color: orange !important;
 }
 
 
-
-.board-controls {
-  border: 15px solid black;
-  height: 245px;
-  width: 245px;
-  border-radius: 150px;
-  background-color: white;
+.game-controller {
+  border: 10px solid black;
+  height: 300px;
+  width: 300px;
+  border-radius: 140px;
+  background-color: gray;
   clear: both;
   position: absolute;
-  z-index: 10;
-  margin-top: 160px;
-  margin-left: 160px;
-  -webkit-box-shadow: -6px 8px 5px 0px rgba(50, 50, 50, 0.75);
+  z-index: 0;
+  margin-top: 180px;
+  margin-left: 180px;
+  
 }
 
 .title {
   font-size: 45px;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  font-weight: bold;
+  margin-top: 45px;
+  margin-bottom:  30px;
+  font-weight: 900;
 }
 
 .inline {
@@ -110,32 +114,32 @@ h1 {
 
 .display {  
   border: solid 2px black;
-  border-radius: 10px;
+  border-radius: 30px;
   color: white;
-  width: 60px;
-  height: 45px;
+  width:60px;
+  height:45px;
   font-size: 40px;
-  background-color: #342626;
+  background-color: #3b2632;
 }
 
 .start, .strict {
   text-align: center;
-  margin: 0px;
+  margin: 0 auto;
   margin-left: 20px;
   border: solid 3px black;
-  width: 55px;
+  width:55px;
   height: 55px;
-  border-radius: 30px;
+  border-radius:30px;
   color: black;
   line-height: 55px;
 }
 
 .start {  
-  background-color: darkred;
+  background-color: rgb(223, 57, 57);
 }
 
  .strict {
-  background-color: yellow;
+  background-color: rgb(206, 206, 41);
 }
 
 .switch-container {
@@ -144,17 +148,17 @@ h1 {
 
 .outter-switch {
   border: solid 2px black;
-  width: 60px;
+  width:40px;
   height: 25px;
   background-color: black;  
 }
 
 .outter-active {
-  background-color: gray !important;
+  background-color: black !important;
 }
 
 .inner-switch {
-  background-color: gray;
+  background-color: whitesmoke;
   width: 30px;
   height: 25px;
   position: relative !important;
