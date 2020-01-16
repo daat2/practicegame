@@ -8,45 +8,65 @@ background-size :cover;
 }
   
 
-.container {
- 
- margin: 0 auto;
-  text-align: center;
-  
-        }
-
-
-h1 {
-  font-size: 80px;
+.}
+.container{
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    
 }
 
-      
-.gamePad{
-  margin: 0 auto;
-  margin-top :170px;
-  border: solid 10px black;
-  width: 640px;
-  height: 640px;
-  border-radius: 310px;
-  background-clip: content-box;
-  
+
+
+h1{ 
+    font-size: 100px;
 }
 
-     
-  .button{
-  margin: 0 auto;
- float: left;
-  position : static;
-  width: 300px;
+.gameboard{
+    margin:0 auto;
+    margin-top:10px;
+    padding:0px;
+    border: 10px  solid  black;
+    width:640px;
+    height:640px;
+    z-index: 1;
+    border-radius:640px;
+    background-clip: border-box;
+    background-color: black;
+   
+    
+}
+
+.game-console{
+ position: absolute;
+ border: 15px solid black;
+  height: 250px;
+  width: 250px;
+  border-radius: 145px;
+  background-color: gray;
+  clear: both;
+    z-index: 10;
+  margin-top: 195px;
+  margin-left: 195px;
+}
+.button{
+width: 300px;
   height: 300px;
-  z-index: auto;
-  border:6px solid black;
-}
+  cursor: pointer;
+  float: left;
+  z-index: 1;
+  margin: 10px;
+  
+ 
+  }
+      
 
-.blue {
+   .blue {
+
     background-color:rgb(26, 0, 170);
-    -moz-border-radius: 320px 0 0 0;
-    border-radius: 320px 0 0 0;    
+    border-top-left-radius: blue;
+    -moz-border-radius: 300px 0 0 0;
+    border-radius: 300px 0 0 0;    
 }
 
 .blue-active {
@@ -55,8 +75,11 @@ h1 {
 
 .yellow {
   background-color: yellow;
-  -moz-border-radius: 0 320px 0 0;
-  border-radius: 0 320px 0 0;
+  float: left;
+  border-top-right-radius: 300px;
+  -moz-border-radius: 0 300px 0 0;
+  border-radius: 0 300px 0 0;
+  clear: right;
 }
 
 
@@ -66,43 +89,30 @@ h1 {
 
 .green {
   background-color: green;
-  -moz-border-radius: 0 0 320px 0;
-  border-radius: 0 0 320px 0;
+  border-bottom-left-radius: 300px;
   
+  clear: left;
 }
 
-.green.active {
-  background-color: green!important;
-
+.green-active {
+  background-color: green !important;
 }
+
 .orange {
   background-color: orange;
-  -moz-border-radius: 0 0 320px 0;
-  border-radius: 0 0 320px 0;
+  border-bottom-right-radius: 300px;
+  /* -moz-border-radius: 0 0 300px 0;
+  border-radius: 0 0 300px 0; */
+  float: left;
 }
 
 .orange-active {
-  background-color: orange !important;
+  background-color: orange!important;
+
 }
-
-
-.game-controller {
-  border: 10px solid black;
-  height: 300px;
-  width: 300px;
-  border-radius: 140px;
-  background-color: gray;
-  clear: both;
-  position: absolute;
-  z-index: 0;
-  margin-top: 180px;
-  margin-left: 180px;
-  
-}
-
 .title {
-  font-size: 45px;
-  margin-top: 45px;
+  font-size: 30px;
+  margin-top: auto;
   margin-bottom:  30px;
   font-weight: 900;
 }
@@ -112,24 +122,20 @@ h1 {
   vertical-align: middle;
 }
 
-.display {  
+.display{  
   border: solid 2px black;
-  border-radius: 30px;
-  color: white;
-  width:60px;
+  border-radius: 40px;
+  color:hotpink;
+  width:50px;
   height:45px;
   font-size: 40px;
-  background-color: #3b2632;
+  background-color: #522842;
 }
-
-.start, .strict {
-  text-align: center;
-  margin: 0 auto;
+/* .toggle {
   margin-left: 20px;
-  border: solid 3px black;
-  width:55px;
-  height: 55px;
-  border-radius:30px;
+  margin-right: 20px; */
+.start 
+  /* border-radius:30px; */
   color: black;
   line-height: 55px;
 }
@@ -138,17 +144,18 @@ h1 {
   background-color: rgb(223, 57, 57);
 }
 
- .strict {
-  background-color: rgb(206, 206, 41);
+ .level {
+  /* background-color: rgb(206, 206, 41); */
 }
 
-.switch-container {
+.switch-box {
   margin-top: 10px;
+
 }
 
 .outter-switch {
   border: solid 2px black;
-  width:40px;
+  width:60px;
   height: 25px;
   background-color: black;  
 }
@@ -167,4 +174,3 @@ h1 {
 .inner-inactive {
   background-color: black !important;
 }
-

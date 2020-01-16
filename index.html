@@ -1,49 +1,61 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
- <link rel= "stylesheet" href="css/style.css" type="text/css"/>
-       
-    <title> Playing Simon game </title>
+     <link rel= "stylesheet" href="css/style.css" type="text/css" />
+       <title> Simon Game</title>
+      
 </head>
 <body>
 
-  <div class="container">
+<div class="container" >
   <div class="header">
-    <h1>Play Simon Game</h1>
+    <h1>Play Simon Game </h1>
   </div>
-      
+  
+<div class= "gameboard">
+      <div id="shape0" class=" button blue"></div>
+      <div id="shape1" class="button yellow"></div>
+      <div id="shape2" class="button green"></div>
+      <div id="shape3" class="button orange"></div>  
  
-  <div class="gamePad ">
-      <div id="blue" class="button blue"></div>
-      <div id="yellow" class="button yellow"></div>
-      <div id="green" class="button green"></div>
-      <div id="orange" class="button orange"></div>
-
-    <div class="game-controller">
-      <div class="title"><h6>SIMON! </h6></div>
+    
+        <div class = "game-console">
+        
+      <div class="title"><h5>SIMON GAME</h5></div>
       <div class="display inline">00</div>
+      <div class = "count">
+      <span>scores</span>
+      </div>
       <div class="start inline">START</div>
-      <div class="strict inline">STRICT</div>
-      <div class="switch-container">
+      <div class="level inline">
+      
+        <input type="radio" class="difOpt" name="difficulty" value="2">Easy
+  <br>
+        <input type="radio" class="difOpt" name="difficulty" value="1" checked>hard
+      <br>
+          
+      </div>
+      <div class="switch-box">
         <p class="off inline">OFF</p>
+       
         <div class="switch outter-switch inline"><div class="inner-switch"></div></div>
         <p class="on inline">ON</p>
-        
+        <div class = "power mode">
+        <span>POWER Switch</span>
+   
       </div>
     </div>
 </div>
 </div>
 
-    <!-- <canvas id =" mycanvas" width =300
-    height =200>
-        </canvas>
-    -->
+    
     <script src ="/js/main.js"></script>
 </body>
 </html>
+
 
 <!-- function checkButtons(gamepad) {
    for (var i = 0; i < gamepad.buttons.length; i++) {
